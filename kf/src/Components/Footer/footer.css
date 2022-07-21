@@ -1,0 +1,130 @@
+/* Footer */
+.footer {
+    width: 100%;
+    background-color: rgb(32,33,36);
+    margin-top: 10%;
+}
+
+.threeLines{
+    width: 50px;
+    height: 50px;
+    padding-bottom: 0%;
+}
+
+.footerFoot {
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.footerFoot ul {
+    margin-right: 50px;
+}
+
+.footerFoot ul li {
+    list-style: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 200;
+}
+
+.footerFoot ul li a {
+    list-style: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+.kfcLogo {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.kfcLogo img {
+    width: 60px;
+    height: 60px;
+}
+
+
+.location {
+    display: flex;
+}
+
+.location div a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+.locationLogo {
+    margin-right: 10px;
+}
+
+.locationLogo i {
+  color: #E4002B;
+}
+
+.buttonLogos {
+    display: flex;
+    margin-left: 100px;
+}
+
+.buttonLogo1 {
+    margin-right: 30px;
+}
+
+.buttonLogo1 img, .buttonLogo2 img {
+    width: 119.7px;
+    height: 40.5px;
+    cursor: pointer;
+}
+
+ .redeemButton {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: transparent;
+    border: 1px solid #202124;
+    color: #202124;
+    margin-left: 20%;
+}
+
+.redeemButton:hover {
+    background-color: #202124;
+    color: #f8f7f5;
+    cursor: pointer;
+}
+
+
+/* Bottom-most Section */
+.bottomMost {
+    display: flex;
+    justify-content: center;
+    margin-left: 40%;
+}
+
+.copyright {
+    margin-right: 40%;
+    padding-top: 15px;
+}
+
+.copyright p {
+    font-size: 12px;
+    text-align: center;
+    opacity: .9;
+    line-height: 12px;
+    color: #dbdbdb;
+}
+
+.socialMedia ul {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.socialMedia ul li {
+    margin-right: 10px;
+}
+

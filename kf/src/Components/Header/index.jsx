@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 import logo from "../../Assest/img/kfc.jpg";
-
+import BasicUsage from "../Pop/Modal";
 const Header = () => {
   return (
     <div className="headerWrapper">
@@ -39,7 +39,10 @@ const Header = () => {
         <h1>
           <i class="bi bi-geo-alt-fill"></i>  LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN
         </h1>
-        <button className="btn ">Start Order</button>
+        <BasicUsage />
+
+        {/* <button 
+        className="btn ">Start Order</button> */}
 
       </div>
      

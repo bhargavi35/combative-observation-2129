@@ -1,0 +1,16 @@
+#loader img {
+    width: 40vw;
+    height: 60vh;
+    margin-left: 30vmax;
+    margin-top: 10vmax;
+}
+
+#loader {
+    background-color: whitesmoke;
+    width: 100vw;
+    height: 100vh;
+}
+.hole {
+    display: none;
+    width: 100vw;
+}

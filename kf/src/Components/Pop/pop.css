@@ -1,0 +1,108 @@
+.btn{
+    width: 180px;
+    height: 45px;
+    border-radius: 30px;
+    background-color: #E4002B;
+    border: 1px solid #E4002B;
+    color: white;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+/* //js format */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+#containerDiv {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 10000;
+    background-color: rgba(32,33,36,.6509803921568628);
+    width: 100%;
+    height: 100%;
+}
+
+#header{
+    display: flex;
+    margin-top: 20px;
+}
+/* 
+#div12 {
+    width: 100%;
+} */
+
+#header #div2 {
+    margin-right: 22%;
+    font-size: 1.5rem;
+}
+
+#div1{
+    width: 92rem;
+    height: 50px;
+    font-size: 2rem;
+    margin-left: 40%;
+    
+}
+#section2{
+    text-align: center;
+    justify-content: center;
+    margin-top:4%;
+    font-size: 38px;
+}
+#section2 button{
+    border-radius: 200px;
+    border: 1.5px solid #202124;
+    width: 22rem ;
+    height: 3rem;
+    background: none transparent;
+    color: #202124;
+    margin-bottom: 1.7rem;
+}
+
+.div1{
+    margin-bottom: 2.5%;
+}
+
+.div1 button {
+    cursor: pointer;
+}
+
+.cutSign {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+
+.cutSign:hover {
+    color:#E4002B;
+    font-size: 25px;
+}
+
+.startOrderDiv {
+    position: absolute;
+    margin: auto;
+    width: 60%;
+    height: 80%;
+    left: 20%;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 0.3rem;
+    outline: 0;
+    align-items: center;
+}
