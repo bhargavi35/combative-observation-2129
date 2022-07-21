@@ -7,10 +7,13 @@ import last from "../../Assest/card/last.jpg";
 import snk from "../../Assest/card/snk.jpg";
 import sthm from "../../Assest/card/stthm.jpg";
 import nwl from "../../Assest/card/new.jpg";
+import meal from "../../Assest/card/meal.jpg";
 import ofr from "../../Assest/card/ofr.jpg";
 import ofr1 from "../../Assest/card/ofr1.jpg";
 import ofr2 from "../../Assest/card/ofr2.jpg";
 import ofr3 from "../../Assest/card/ofr3.jpg";
+import BasicUsage from "../../Components/Footer/Modal";
+
 
 import "./card.css";
 const Card = () => {
@@ -44,7 +47,7 @@ const Card = () => {
                 </a>
 
                 <a href="menu.html#box_meals" class="menuCard">
-                    <img src={brni} />
+                    <img src={meal} />
                     <section class="menuText">Box Meals</section>
                 </a>
             </div>
@@ -72,7 +75,6 @@ const Card = () => {
                 </a>
             </div>
 
-            {/* second part card */}
             <div class="footer">
                 <div>
                     <img class="threeLines" src={thre} alt="" />
@@ -91,7 +93,7 @@ const Card = () => {
 
                 <div class="btnLeftDiv">
                     <button class="btnLeft">
-                        {/* <p>&#8249;</p> */}
+                        <p>&#8249;</p>
                     </button>
                 </div>
 
@@ -100,7 +102,7 @@ const Card = () => {
                         <div class="cardImg">
                             <img src={ofr} />
                         </div>
-                      
+
                         <div class="cardContentTitle">
                             1 Pc free Chicken Zinger on a cart value of 399 or above on first
                             order. Only for registered users.
@@ -113,9 +115,13 @@ const Card = () => {
                             <a href="javascript:myBlurFunction(1);">
                                 <div class="offerViewDetails">View Details</div>
                             </a>
-                            <a href="startOrder.html">
-                                <button class="redeemButton">Redeem</button>
-                            </a>
+
+                            {/* <a href="startOrder.html">
+                  <button class="redeemButton">Redeem</button>
+                </a>
+                 */}
+                            <BasicUsage />
+                            {/* <button class="redeemButton" onClick={BasicUsage}>Redeem</button> */}
                         </div>
                     </div>
 
@@ -123,7 +129,7 @@ const Card = () => {
                         <div class="cardImg">
                             <img src={ofr1} />
                         </div>
-                    
+
                         <div class="cardContentTitle">
                             1 Pc free Veg Zinger on a cart value of 399 or above on first
                             order. Only for registered users
@@ -136,9 +142,10 @@ const Card = () => {
                             <a href="javascript:myBlurFunction(1);">
                                 <div class="offerViewDetails">View Details</div>
                             </a>
-                            <a href="startOrder.html">
-                                <button class="redeemButton">Redeem</button>
-                            </a>
+                            {/* <a href="">
+                  <button class="redeemButton">Redeem</button>
+                </a> */}
+                            <BasicUsage />
                         </div>
                     </div>
 
@@ -158,9 +165,10 @@ const Card = () => {
                             <a href="javascript:myBlurFunction(1);">
                                 <div class="offerViewDetails">View Details</div>
                             </a>
-                            <a href="startOrder.html">
-                                <button class="redeemButton">Redeem</button>
-                            </a>
+                            {/* <a href="">
+                  <button class="redeemButton">Redeem</button>
+                </a> */}
+                            <BasicUsage />
                         </div>
                     </div>
 
@@ -180,15 +188,16 @@ const Card = () => {
                             <a href="javascript:myBlurFunction(1);">
                                 <div class="offerViewDetails">View Details</div>
                             </a>
-                            <a href="startOrder.html">
-                                <button class="redeemButton">Redeem</button>
-                            </a>
+                            {/* <a href="">
+                  <button class="redeemButton">Redeem</button>
+                </a> */}
+                            <BasicUsage />
                         </div>
                     </div>
 
                     <div class="btnRightDiv">
                         <button class="btnRight">
-                            {/* <p>&#8250;</p> */}
+                            <p>&#8250;</p>
                         </button>
                     </div>
                 </div>

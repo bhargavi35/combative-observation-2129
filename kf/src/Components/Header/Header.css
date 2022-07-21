@@ -1,3 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+
 .headerWrapper {
     display: flex;
 }
@@ -129,7 +150,7 @@ a img {
 .nav i{
     color: #E4002B;
 }
-.btn{
+/* .btn{
     width: 180px;
     height: 45px;
     border-radius: 30px;
@@ -140,4 +161,4 @@ a img {
     margin-left: 20px;
     margin-top: 5px;
     cursor: pointer;
-}
+} */
