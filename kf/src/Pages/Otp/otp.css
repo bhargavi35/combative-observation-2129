@@ -1,5 +1,4 @@
-
-  .OtpWrapper{
+.OtpWrapper {
     width: 600px;
     align-items: center;
     text-align: center;
@@ -7,31 +6,28 @@
     border-radius: 20px;
     margin-top: 10%;
     background-color: white;
-
 }
 
 .signIn {
-    margin-top: 5%;
+    margin-top: -10%;
     margin-bottom: 5%;
 }
-.box{
-   width: 40px;
 
+.box {
+    width: 40px;
+}
 
-}
-#container h3, p, #container>a {
-    font-family: sans-serif;
-}
-a{
+a {
     color: black;
     text-decoration: underline;
 }
-p{
+
+p {
     text-align: center;
     margin-left: 10%;
 }
 
-.submit {
+button {
     width: 100px;
     height: 30px;
     border-radius: 20px;
@@ -40,10 +36,8 @@ p{
     border: 1px solid #cecece;
 }
 
-.submit:hover {
-    font-size: 25px;
-    background-color: black;
-    color: white;
+button:hover {
+    color: black;
     cursor: pointer;
 }
 
@@ -54,4 +48,9 @@ input {
     text-align: center;
     border: 1px solid #cecece;
     font-size: 15px;
+}
+img{
+    margin-bottom: 2.4rem;
+    cursor: pointer;
+    width: 18%;
 }

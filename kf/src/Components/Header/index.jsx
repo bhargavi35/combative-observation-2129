@@ -2,6 +2,8 @@ import React from "react";
 import "./Header.css";
 import logo from "../../Assest/img/kfc.jpg";
 import BasicUsage from "../Pop/Modal";
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <div className="headerWrapper">
@@ -13,7 +15,9 @@ const Header = () => {
         </div>
 
         <div class="navItemLeft">
-          <a href="">Menu</a>
+          <Link to="/menu">
+                <a >Menu</a>
+            </Link>
           <a href="">Deals</a>
         </div>
 
@@ -21,7 +25,7 @@ const Header = () => {
 
           <div class="accountIcon">
             <img src="https://i.ibb.co/zR1JpWH/Account-Icon.jpg" />
-            <a href="">Sign In</a>
+            <li><Link to="/login">Sign In</Link></li>
           </div>
 
           <div class="bucketIconDiv">

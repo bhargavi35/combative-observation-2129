@@ -1,141 +1,90 @@
 import React from "react";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
-import "./menu.css"
+import "./menu.css";
+import thre from "../../Assest/img/three.svg";
+import { useEffect, useState, useSearchParams } from "react";
 
 const Menu = () => {
-    return (
-        <>
-            <div className="menuWrapper">
-                <Header/>
-                <div id="main_container">
-                    <div class="left-menu-section">
-                        <div class="menu-container">
-                            <div class="strips">
-                                <span class="strip-lines"></span>
-                                <span class="strip-lines"></span>
-                                <span class="strip-lines"></span>
-                            </div>
+  const [data, setData] = useState([]);
+  const [page, setPage] = useState(Number(searchPara.get("page")) || 1);
+  const [searchPara, setSearchPara] = useSearchParams();
+  const [text, setText] = useState(searchPara.get("q") || "");
 
-                            <h1 class="kfc-menu">KFC MENU</h1>
+  useEffect(() => {
+    setSearchPara({
+      page,
+      q: text,
+    });
+  }, [page, text]);
+  useEffect(() => {
+    fetch(`http://localhost:3000/api/Items=${page}`)
+      .then((res) => res.json())
+      .then((res) => {
+        setData(res.data);
+        console.log(res);
+      });
+  }, [page]);
+  return (
+    <>
+      <div className="menuWrapper">
+        <Header />
+        <div id="main_container">
+          <div class="left-menu-section">
+            <div class="menu-container">
+              <div class="strips">
+                <span class="strip-lines"></span>
+                <span class="strip-lines"></span>
+                <span class="strip-lines"></span>
+              </div>
+              <div>
+                <img class="threeLine" src={thre} alt="" />
+              </div>
 
-                            <div class="outer-ul">
-                                <p>
-                                    <a href="#chicken_bucket">Chicken Buckets</a>
-                                </p>
-                                <p>
-                                    <a href="#biryani_bucket">Biryani Buckets</a>
-                                </p>
-                                <p>
-                                    <a href="#box_meals">Box Meals</a>
-                                </p>
-                                <p>
-                                    <a href="#burgers">Burgers</a>
-                                </p>
-                                <p>
-                                    <a href="#stay_home_special">Stay Home Specials</a>
-                                </p>
-                                <p>
-                                    <a href="#snacks">Snacks</a>
-                                </p>
-                                <p>
-                                    <a href="#beverages">Beverages</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="right-menu-section">
-                        <div id="main_search-bar">
-                            <div>
-                                <img
-                                    src="https://online.kfc.co.in/static/media/searchIcon.0e00b33c.svg"
-                                    alt=""
-                                />
-                            </div>
-                            <input
-                                type="text"
-                                id="main_searched_item"
-                                placeholder="Search our menu"
-                            />
-                        </div>
-                        <hr />
-                        <div id="chicken_bucket">
-                            <h2>
-                                <a name="chicken_bucket">CHICKEN BUCKET</a>
-                            </h2>
-                            <div id="c_b"></div>
-                        </div>
-                        <div id="biryani_bucket" class="image_size">
-                            <h2>
-                                <a name="biryani_bucket">BIRYANI BUCKET</a>
-                            </h2>
-                            <div id="b_b"></div>
-                        </div>
-                        <div id="box_meals" class="image_size">
-                            <h2>
-                                <a name="box_meals">BOX MEALS</a>
-                            </h2>
-                            <div id="b_m"></div>
-                        </div>
-                        <div id="burgers" class="image_size">
-                            <h2>
-                                <a name="burgers">BURGERS</a>
-                            </h2>
-                            <div id="bgr"></div>
-                        </div>
-                        <div id="stay_home_specials" class="image_size">
-                            <h2>
-                                <a name="stay_home_special">STAY HOME SPECIALS</a>
-                            </h2>
-                            <div id="s_h"></div>
-                        </div>
-                        <div id="snacks" class="image_size">
-                            <h2>
-                                <a name="snacks">SNACKS</a>
-                            </h2>
-                            <div id="snk"></div>
-                        </div>
-                        <div id="beverages" class="image_size">
-                            <h2>
-                                <a name="beverages">BEVERAGES</a>
-                            </h2>
-                            <div id="bvg"></div>
-                        </div>
-                    </div>
-                </div>
-                <div id="popup_container">
-                    <div id="popup_left">
-                        <div class="strips">
-                            <span class="strip-lines"></span>
-                            <span class="strip-lines"></span>
-                            <span class="strip-lines"></span>
-                        </div>
-                    </div>
-                    <div id="popup_right">
-                        <div id="popup_search-bar">
-                            <div>
-                                <img
-                                    src="https://online.kfc.co.in/static/media/searchIcon.0e00b33c.svg"
-                                    alt=""
-                                />
-                            </div>
-                            <input
-                                type="text"
-                                id="popup_searched_item"
-                                placeholder="Search our menu"
-                            />
-                        </div>
-                        <hr />
-                        <div id="searched_food"></div>
-                    </div>
-                </div>
+              <h1 class="kfc-menu">KFC MENU</h1>
 
-                
+              <div class="outer-ul">
+                <h5>Chicken Buckets</h5>
+                <h5>New Launch</h5>
+                <h5>Biryani Buckets</h5>
+                <h5>Box Meals</h5>
+                <h5>Burgers</h5>
+                <h5>STAY HOME SPECIALS</h5>
+                <h5>Snacks</h5>
+                <h5>Beverages</h5>
+              </div>
             </div>
-            <Footer/>
-
-        </>
-    );
+          </div>
+        </div>
+       
+        <div id="popup_container">
+          <div id="popup_left">
+            <div>
+              <img class="threeLine" src={thre} alt="" />
+            </div>
+          </div>
+          <div id="popup_right">
+            <div id="popup_search-bar">
+              <div>
+                <img
+                  src="https://online.kfc.co.in/static/media/searchIcon.0e00b33c.svg"
+                  alt=""
+                />
+              </div>
+              <input
+                type="text"
+                id="popup_searched_item"
+                placeholder="Search our menu"
+              />
+            </div>
+            <hr />
+            <div id="searched_food"></div>
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </>
+  );
 };
 
 export default Menu;

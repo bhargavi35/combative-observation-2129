@@ -14,27 +14,14 @@ body {
     position: fixed;
     top: 100px;
 }
-
-.strips {
-    display: flex;
-}
-
-.strip-lines {
-    width: 5px;
-    height: 25px;
-    background-color: red;
-    padding: 2px;
-    margin: 0px 10px 10px 0px;
-}
-
 .outer-ul {
-    color: gray;
-    line-height: 25px;
     font-size: large;
 }
-.outer-ul a {
+.outer-ul h5 {
     text-decoration: none;
     color: gray;
+    padding: 5%;
+    text-transform: uppercase;
 }
 
 .right-menu-section {
@@ -242,5 +229,10 @@ body {
 #searched_food img {
     width: 280px;
 }
-
-
+.threeLine {
+    width: 100px;
+    height: 60px;   
+    margin-left: 10%;
+    margin-top: -4%;
+    
+}

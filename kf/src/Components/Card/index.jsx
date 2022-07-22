@@ -12,7 +12,7 @@ import ofr from "../../Assest/card/ofr.jpg";
 import ofr1 from "../../Assest/card/ofr1.jpg";
 import ofr2 from "../../Assest/card/ofr2.jpg";
 import ofr3 from "../../Assest/card/ofr3.jpg";
-import BasicUsage from "../../Components/Footer/Modal";
+import BasicUsage from "./Modal";
 
 
 import "./card.css";
@@ -77,14 +77,14 @@ const Card = () => {
 
             <div class="footer">
                 <div>
-                    <img class="threeLines" src={thre} alt="" />
+                    <img class="threeLine" src={thre} alt="" />
                 </div>
 
                 <div class="offers">
                     <div class="offersAndDeals">
                         <h2>OFFERS & DEALS</h2>
                     </div>
-                    <a href="Deals.html">
+                    <a href="">
                         <section class="viewAll">
                             View All Deals <i class="bi bi-arrow-right"></i>
                         </section>
