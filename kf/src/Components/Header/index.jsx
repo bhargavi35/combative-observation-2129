@@ -8,20 +8,20 @@ const Header = () => {
 
       <div id="navbar">
         <div>
-          <a href="index.html"><img src={logo} /></a>
+          <a href=""><img src={logo} /></a>
 
         </div>
 
         <div class="navItemLeft">
-          <a href="menu.html">Menu</a>
-          <a href="Deals.html">Deals</a>
+          <a href="">Menu</a>
+          <a href="">Deals</a>
         </div>
 
         <div class="navItemRight">
 
           <div class="accountIcon">
             <img src="https://i.ibb.co/zR1JpWH/Account-Icon.jpg" />
-            <a href="sign.html">Sign In</a>
+            <a href="">Sign In</a>
           </div>
 
           <div class="bucketIconDiv">
