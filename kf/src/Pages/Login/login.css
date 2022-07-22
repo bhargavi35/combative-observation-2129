@@ -19,15 +19,11 @@ body{
     margin-bottom: 2.8rem;
 
 }
-img{
-    margin-bottom: 2.4rem;
-    cursor: pointer;
-    width: 6%;
-}
+
 #h3{
     font-weight: bold;
-    margin-bottom: 2.6rem;
-
+    margin-top: -4%;
+    margin-bottom: -1%;
 }
 input{
     width: 30rem;
@@ -81,20 +77,7 @@ p{
     cursor: pointer;
     height: 2.8rem;
 }
-#or{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    
-}
-.orleft,.orright{
-    width: 13rem;
-    border-top: 1px solid #000000 ;
-    margin-top: 10px;
-    opacity: 0.1;
-    margin-right: 10px;
-    margin-left: 10px;
-}
+
 
 #container a {
     text-decoration: none;

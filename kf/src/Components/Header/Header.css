@@ -84,14 +84,16 @@ a img {
     justify-content: center;
     align-items: center;
     padding-left: 70px;
-    font-size: 13px
+    font-size: 13px;
+    margin-top: auto;
 }
 
-.accountIcon a {
+.accountIcon li   {
     margin-left: 20px;
     font-style: normal;
     font-weight: 900;
-    text-decoration: none;
+    list-style-type: none;
+    margin-top:-30%;
 }
 
 .accountIcon img {
@@ -109,20 +111,23 @@ a img {
     padding-top: 20px;
     padding-left: 5px;
     font-style: normal;
-    font-size: 13px;
+    font-size: 14px;
+    margin-top: 70%;
 }
 
 .bucketIcon img {
     width: 51px;
     height: 51px;
     margin-top: 8%;
+    margin-top: 100%;
+
 }
 
 #cartIconCount {
     position: absolute;
-    top: 0;
-    right: 20%;
-    bottom: 0;
+    top: 50%;
+    right: 19%;
+    bottom: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,6 +146,7 @@ a img {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 20%;
 }
 
 .nav h1 {
@@ -148,7 +154,8 @@ a img {
     margin: 20px;
 }
 .nav i{
-    color: #E4002B;
+    color: #E4002B; 
+
 }
 /* .btn{
     width: 180px;
