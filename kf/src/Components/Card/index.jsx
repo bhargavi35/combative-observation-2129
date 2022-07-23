@@ -21,7 +21,7 @@ const Card = () => {
         <>
             <div class="start">
                 <div>
-                    <img class="threeLines" src={thre} alt="" />
+                    <img class="tre" src={thre} alt="" />
                 </div>
                 <div class="startText">WELCOME TO KFC!</div>
             </div>
@@ -98,9 +98,9 @@ const Card = () => {
                 </div>
 
                 <div class="cardsContainer">
-                    <div class="card">
+                    <div class="card1">
                         <div class="cardImg">
-                            <img src={ofr} />
+                            <img className="sb" src={ofr} />
                         </div>
 
                         <div class="cardContentTitle">
@@ -125,9 +125,9 @@ const Card = () => {
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card1">
                         <div class="cardImg">
-                            <img src={ofr1} />
+                            <img className="sb" src={ofr1} />
                         </div>
 
                         <div class="cardContentTitle">
@@ -149,9 +149,9 @@ const Card = () => {
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card1">
                         <div class="cardImg">
-                            <img src={ofr2} />
+                            <img className="sb" src={ofr2} />
                         </div>
                         <div class="cardContentTitle">
                             Add 2 Pc Hot n Crispy Chicken @ just Rs 99 on min cart value of Rs
@@ -172,9 +172,9 @@ const Card = () => {
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card1">
                         <div class="cardImg">
-                            <img src={ofr3} />
+                            <img className="sb" src={ofr3} />
                         </div>
                         <div class="cardContentTitle">
                             Upto Rs 100 off on min cart value of Rs 599 or more . Applicable

@@ -1,10 +1,12 @@
 import React from "react";
 import "./name.css"
 import { Link } from "react-router-dom";
+import Loader from "../Loader";
 
 const Name = () => {
     return (
         <div className="nameWrapper">
+            {/* <Loader/> */}
             <div id="container">
                 <h5>Sign in/Sign up</h5>
                 <h3>WELCOME,</h3>

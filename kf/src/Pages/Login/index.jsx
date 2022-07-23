@@ -2,11 +2,17 @@ import React from "react";
 import logo from "../../Assest/img/kfc.jpg";
 import "./login.css";
 import { Link } from "react-router-dom";
+import Loader from "../Loader";
+import { useState } from "react";
 
 
 const Login = () => {
+    const {mobile,setMobile}=useState("")
+
     return (
+    
         <div className="loginWrapper">
+            {/* <Loader/> */}
             <div id="container">
                 <div id="sign">Sign in / Sign up</div>
                 <div>
@@ -16,7 +22,7 @@ const Login = () => {
                     <h5>LET'S SIGN IN OR CREATE ACCOUNT WITH YOUR PHONE </h5>
                     <h5 style={{paddingTop:"0%"}}>NUMBER!</h5>
                 </div>
-                <input type="number" id="inputNumber" placeholder="Phone Number*" />
+                <input onChange={(e) => setMobile(e.target.value) } type="number" id="inputNumber" placeholder="Phone Number*" />
                 <p>
                     By "logging in to KFC",you agree to our{" "}
                     <span id="privacy" >

@@ -1,17 +1,16 @@
-.btn{
+.am{
     width: 180px;
     height: 45px;
     border-radius: 30px;
-    background-color: #E4002B;
     border: 1px solid #E4002B;
     color: white;
     font-weight: 600;
     margin-left: 20px;
-    margin-top: 5px;
+    margin-top: 15px;
+    background-color: #E4002B;
     cursor: pointer;
 }
 
-/* //js format */
 
 *{
     margin: 0;
@@ -37,10 +36,6 @@ body{
     display: flex;
     margin-top: 20px;
 }
-/* 
-#div12 {
-    width: 100%;
-} */
 
 #header #div2 {
     margin-right: 22%;

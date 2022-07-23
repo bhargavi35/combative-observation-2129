@@ -1,0 +1,157 @@
+body {
+    font-family: sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+#main_container {
+    width: 100vw;
+    display: flex;
+}
+
+.left-menu-section {
+    flex: 1;
+    margin-left: 100px;
+    position: fixed;
+    top: 100px;
+}
+
+.card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin-right: 85px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    padding: 10px;
+
+}
+
+.card-body {
+    padding: 0;
+    padding-top: 12px;
+}
+
+.right-menu-section {
+    flex: 3;
+    width: 60%;
+    margin-right: 6.2%;
+    margin-top: 2%;
+}
+
+.right-menu-section hr {
+    width: 860px;
+    height: 1px;
+    background-color: black;
+    margin-left: 0px;
+
+}
+
+#search-bar {
+    width: 200px;
+    height: 30px;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+#search-bar img {
+    width: 100%;
+}
+
+#search-bar input {
+    flex: 0.9;
+    height: 28px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.card {
+    width: 400px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    text-align: justify;
+    height: 500px;
+}
+
+.card-title {
+    padding-left: 6%;
+}
+
+.card-body {
+    padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+}
+
+.price {
+    color: red;
+    font-size: 18px;
+}
+
+.unls {
+    display: flex;
+    font-size: 16px;
+    justify-content: space-evenly;
+}
+
+.card-text {
+    height: 50px;
+    overflow: hidden;
+    margin-top: -15%;
+}
+
+.card img {
+    width: 400px;
+    padding-left: 0%;
+    height: 50%;
+}
+
+.right-menu-section button {
+    width: 40%;
+    margin-left: 17%;
+    color: white;
+    background-color: red;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: -6.5%;
+}
+
+
+
+.card-wrapper1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-right: 85px;
+    padding: 10px;
+
+}
+.card-wrapper1 .card-body{
+    width: 300px;
+    padding: -3%;
+}
+.card-wrapper1>div {
+    width: 320px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.card-wrapper1 img {
+    width: 320px;
+}
+
+
+.card-wrapper1 .btn-wrapper{
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
