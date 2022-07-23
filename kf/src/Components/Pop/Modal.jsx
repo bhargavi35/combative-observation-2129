@@ -16,7 +16,7 @@ export default function BasicUsage() {
 
   return (
     <>
-      <Button className="btn" onClick={onOpen}>
+      <Button className="am" onClick={onOpen}>
         Start Order
       </Button>
       <Text textStyle="subtitle1">{isOpen ? "" : ""}</Text>

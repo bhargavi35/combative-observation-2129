@@ -3,12 +3,14 @@ import "./otp.css";
 import { Box, PinInput, PinInputField } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Loader from "../Loader";
 
 const Otp = () => {
     const [otp, setOTP] = useState("");
 
     return (
         <div className="OtpWrapper">
+            {/* <Loader/> */}
             <div class="signIn">
                 <h6>Sign in / Sign up</h6>
             </div>
