@@ -8,16 +8,16 @@ import { useEffect, useState } from "react";
 import Data from "../../Components/Data";
 
 const Menu = () => {
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
 
-  useEffect(() => {
-    fetch(`http://localhost:5050/items`)
-      .then((res) => res.json())
-      .then((res) => {
-        setData(res.data);
-        console.log(res);
-      });
-  }, []);
+  // useEffect(() => {
+  //   fetch(`http://localhost:5050/items`)
+  //     .then((res) => res.json())
+  //     .then((res) => {
+  //       setData(res.data);
+  //       console.log(res);
+  //     });
+  // }, []);
   return (
     <>
       <div className="menuWrapper">

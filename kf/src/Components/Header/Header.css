@@ -107,12 +107,14 @@ a img {
     padding-left: 20px;
 }
 
-.bucketIconDiv span {
+.bucketIconDiv a {
     padding-top: 20px;
     padding-left: 5px;
     font-style: normal;
     font-size: 14px;
     margin-top: 70%;
+    color: #202124;
+    text-decoration: none;
 }
 
 .bucketIcon img {

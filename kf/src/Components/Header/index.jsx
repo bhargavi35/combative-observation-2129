@@ -30,7 +30,9 @@ const Header = () => {
           </div>
 
           <div class="bucketIconDiv">
-            <span id="priceUpdate">₹0</span>
+          <Link to="/cart"><span id="priceUpdate">₹0</span></Link>
+
+            {/* <span id="priceUpdate">₹0</span> */}
             <div class="bucketIcon">
               <img src="https://i.ibb.co/ygnYs9m/bucket-cart-icon.jpg" />
               <div id="cartIconCount">0</div>
