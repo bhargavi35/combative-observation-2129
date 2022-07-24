@@ -12,7 +12,9 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+
 import Deals from './Pages/Deals';
+import Cart from './Pages/Cart';
 
 function App() {
   return (
@@ -22,10 +24,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/deals" element={<Deals />} />
-
           <Route path="/login" element={<Login />} />
           <Route path="/otp" element={<Otp />} />
           <Route path='/name' element={<Name/> }/>
+          <Route path='/cart' element={<Cart/> }/>
+
         </Routes>
       </BrowserRouter>
     </div>
